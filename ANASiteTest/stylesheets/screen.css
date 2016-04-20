@@ -1,0 +1,2211 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, ../../../../../Ruby21/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../Ruby21/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../Ruby21/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../Ruby21/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../Ruby21/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../Ruby21/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../Ruby21/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../Ruby21/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../Ruby21/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 23, ../sass/screen.scss */
+html {
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+/* line 29, ../sass/screen.scss */
+#navBar {
+  overflow: hidden;
+}
+/* line 33, ../sass/screen.scss */
+#navBar img {
+  float: left;
+  height: 100px;
+}
+/* line 40, ../sass/screen.scss */
+#navBar p {
+  color: #ff0d00;
+  font-weight: 700;
+  font-family: "Century Gothic";
+  font-size: 3em;
+  margin: 25px 0px 0px 20px;
+  float: left;
+}
+/* line 51, ../sass/screen.scss */
+#navBar nav {
+  float: right;
+  margin-right: 20px;
+  height: 110px;
+  		/* @media only screen and (max-width: 592px) {
+  
+  			a{
+  
+  				font-size: 1.2em;
+  
+  			}
+  
+  		} */
+  		/* @media only screen and (max-width: 494px) {
+  
+  			a{
+  
+  				font-size: 1em;
+  
+  			}
+  
+  		} */
+}
+/* line 58, ../sass/screen.scss */
+#navBar nav a {
+  font-family: "Century Gothic";
+  text-decoration: none;
+  padding: 40px 60px 35px 60px;
+  font-size: 1.5em;
+  color: #029aa8;
+  display: inline-block;
+  transition: all .2s ease-in-out;
+}
+@media only screen and (max-width: 1142px) {
+  /* line 72, ../sass/screen.scss */
+  #navBar nav a {
+    padding: 40px 30px;
+  }
+}
+@media only screen and (max-width: 842px) {
+  /* line 82, ../sass/screen.scss */
+  #navBar nav a {
+    padding: 40px 10px;
+  }
+}
+@media only screen and (max-width: 642px) {
+  /* line 92, ../sass/screen.scss */
+  #navBar nav a {
+    padding: 40px 5px;
+  }
+}
+@media only screen and (max-width: 555px) {
+  /* line 102, ../sass/screen.scss */
+  #navBar nav a {
+    padding: 20px 5px;
+    color: white;
+  }
+}
+/* line 131, ../sass/screen.scss */
+#navBar nav a:hover {
+  color: white;
+  background-color: #029aa8;
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+@media only screen and (max-width: 575px) {
+  /* line 145, ../sass/screen.scss */
+  #navBar nav {
+    margin-right: 0;
+  }
+}
+@media only screen and (max-width: 555px) {
+  /* line 155, ../sass/screen.scss */
+  #navBar nav {
+    height: 160px;
+    text-align: center;
+    background-color: #015c65;
+  }
+}
+
+/* line 167, ../sass/screen.scss */
+.heroSection {
+  background-image: url(../Images/HeroImage.jpg);
+  background-position: center;
+  text-align: center;
+  height: 887px;
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+}
+/* line 177, ../sass/screen.scss */
+.heroSection h1 {
+  font-size: 6em;
+  font-family: "Century Gothic";
+  font-weight: 900;
+  color: white;
+  margin-top: 285px;
+  line-height: 1.2;
+  text-shadow: 10px 10px 5px rgba(0, 0, 0, 0.75);
+  text-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+/* line 187, ../sass/screen.scss */
+.heroSection h1 span {
+  font-size: 1.5em;
+  text-transform: uppercase;
+}
+@media only screen and (max-width: 864px) {
+  /* line 198, ../sass/screen.scss */
+  .heroSection h1 {
+    font-size: 4em;
+  }
+}
+@media only screen and (max-width: 575px) {
+  /* line 208, ../sass/screen.scss */
+  .heroSection h1 {
+    font-size: 3em;
+  }
+}
+@media only screen and (max-width: 435px) {
+  /* line 218, ../sass/screen.scss */
+  .heroSection h1 {
+    font-size: 2.5em;
+  }
+}
+
+/* line 230, ../sass/screen.scss */
+.aboutSection #paper {
+  background-color: white;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  overflow: hidden;
+  z-index: 3;
+  transform: translateY(-55px);
+  -moz-box-shadow: 10px 10px 79px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 79px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 79px 0px rgba(0, 0, 0, 0.75);
+}
+/* line 243, ../sass/screen.scss */
+.aboutSection #paper #row1 {
+  display: -webkit-flex;
+  display: flex;
+}
+/* line 247, ../sass/screen.scss */
+.aboutSection #paper #row1 #button {
+  width: 35%;
+  text-align: center;
+}
+/* line 252, ../sass/screen.scss */
+.aboutSection #paper #row1 #button a {
+  background-color: #ff0d00;
+  text-decoration: none;
+  font-family: "Century Gothic";
+  font-size: 2.5em;
+  color: white;
+  padding: 30px 80px;
+  display: inline-block;
+  border: 1px solid #ff0d00;
+  margin-top: 165px;
+  position: relative;
+  transform: translateZ(0) translateY(0);
+  transition: all .2s ease-in-out;
+}
+@media only screen and (max-width: 1684px) {
+  /* line 270, ../sass/screen.scss */
+  .aboutSection #paper #row1 #button a {
+    margin-bottom: 125px;
+  }
+}
+@media only screen and (max-width: 1025px) {
+  /* line 280, ../sass/screen.scss */
+  .aboutSection #paper #row1 #button a {
+    padding: 30px 40px;
+  }
+}
+@media only screen and (max-width: 775px) {
+  /* line 290, ../sass/screen.scss */
+  .aboutSection #paper #row1 #button a {
+    padding: 30px 20px;
+  }
+}
+@media only screen and (max-width: 645px) {
+  /* line 300, ../sass/screen.scss */
+  .aboutSection #paper #row1 #button a {
+    font-size: 2.2em;
+    padding: 30px 10px;
+  }
+}
+/* line 311, ../sass/screen.scss */
+.aboutSection #paper #row1 #button a:after {
+  content: "";
+  background-color: white;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  right: 50%;
+  opacity: 0;
+  z-index: -1;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+/* line 326, ../sass/screen.scss */
+.aboutSection #paper #row1 #button a:hover {
+  color: #ff0d00;
+}
+/* line 332, ../sass/screen.scss */
+.aboutSection #paper #row1 #button a:hover:after {
+  left: 0;
+  right: 0;
+  opacity: 1;
+}
+@media only screen and (max-width: 555px) {
+  /* line 346, ../sass/screen.scss */
+  .aboutSection #paper #row1 #button {
+    width: 100%;
+    position: absolute;
+    z-index: 3;
+  }
+}
+/* line 356, ../sass/screen.scss */
+.aboutSection #paper #row1 #picture {
+  width: 65%;
+  background-image: url(../Images/Donate.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 443px;
+}
+@media only screen and (max-width: 1684px) {
+  /* line 369, ../sass/screen.scss */
+  .aboutSection #paper #row1 #picture {
+    height: initial;
+  }
+}
+@media only screen and (max-width: 555px) {
+  /* line 379, ../sass/screen.scss */
+  .aboutSection #paper #row1 #picture {
+    width: 100%;
+    height: 443px;
+    position: absolute;
+  }
+}
+@media only screen and (max-width: 555px) {
+  /* line 395, ../sass/screen.scss */
+  .aboutSection #paper #row1 {
+    display: block;
+    height: 443px;
+  }
+}
+/* line 404, ../sass/screen.scss */
+.aboutSection #paper #row2 {
+  display: -webkit-flex;
+  display: flex;
+}
+/* line 408, ../sass/screen.scss */
+.aboutSection #paper #row2 #picture2 {
+  width: 35%;
+  height: 442px;
+  background-image: url(../Images/ANAHouse.jpg);
+  background-repeat: no-repeat;
+}
+@media only screen and (max-width: 972px) {
+  /* line 419, ../sass/screen.scss */
+  .aboutSection #paper #row2 #picture2 {
+    height: initial;
+  }
+}
+@media only screen and (max-width: 555px) {
+  /* line 429, ../sass/screen.scss */
+  .aboutSection #paper #row2 #picture2 {
+    height: 442px;
+    width: 100%;
+  }
+}
+/* line 438, ../sass/screen.scss */
+.aboutSection #paper #row2 #aboutUs {
+  width: 65%;
+}
+/* line 442, ../sass/screen.scss */
+.aboutSection #paper #row2 #aboutUs #title {
+  text-align: right;
+}
+/* line 446, ../sass/screen.scss */
+.aboutSection #paper #row2 #aboutUs #title h2 {
+  font-family: "Century Gothic";
+  color: #029aa8;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 3.5em;
+  margin-right: 40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+/* line 461, ../sass/screen.scss */
+.aboutSection #paper #row2 #aboutUs hr {
+  border-color: #029aa8;
+  width: 90%;
+  border-style: solid;
+}
+/* line 469, ../sass/screen.scss */
+.aboutSection #paper #row2 #aboutUs #blurb {
+  text-align: center;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 476, ../sass/screen.scss */
+.aboutSection #paper #row2 #aboutUs #blurb p {
+  font-family: "Century Gothic";
+  color: #029aa8;
+  font-size: 1.5em;
+  margin-top: 25px;
+}
+@media only screen and (max-width: 972px) {
+  /* line 487, ../sass/screen.scss */
+  .aboutSection #paper #row2 #aboutUs #blurb p {
+    font-size: 1.2em;
+  }
+}
+/* line 495, ../sass/screen.scss */
+.aboutSection #paper #row2 #aboutUs #blurb a {
+  font-family: "Century Gothic";
+  color: #029aa8;
+  font-size: 1.5em;
+  margin-top: 25px;
+  display: inline-block;
+  text-align: right;
+  width: 100%;
+  text-decoration: none;
+}
+@media only screen and (max-width: 972px) {
+  /* line 510, ../sass/screen.scss */
+  .aboutSection #paper #row2 #aboutUs #blurb a {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+}
+/* line 520, ../sass/screen.scss */
+.aboutSection #paper #row2 #aboutUs #blurb a:hover {
+  color: #015c65;
+}
+@media only screen and (max-width: 555px) {
+  /* line 532, ../sass/screen.scss */
+  .aboutSection #paper #row2 #aboutUs {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 555px) {
+  /* line 544, ../sass/screen.scss */
+  .aboutSection #paper #row2 {
+    display: block;
+  }
+}
+@media only screen and (max-width: 1495px) {
+  /* line 556, ../sass/screen.scss */
+  .aboutSection #paper {
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 1297px) {
+  /* line 566, ../sass/screen.scss */
+  .aboutSection #paper {
+    width: 90%;
+  }
+}
+
+/* line 578, ../sass/screen.scss */
+.helpSection {
+  transform: translateY(-155px);
+}
+/* line 582, ../sass/screen.scss */
+.helpSection #helpTitleSection {
+  background-color: #4ab4be;
+  height: 800px;
+  text-align: center;
+}
+/* line 588, ../sass/screen.scss */
+.helpSection #helpTitleSection #helpTitle {
+  overflow: hidden;
+}
+/* line 592, ../sass/screen.scss */
+.helpSection #helpTitleSection #helpTitle #mobileTitle {
+  font-family: "Century Gothic";
+  color: white;
+  font-size: 5.5em;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 10px;
+  margin-top: 0px;
+  display: none;
+  text-shadow: 10px 10px 5px rgba(0, 0, 0, 0.75);
+  text-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+@media only screen and (max-width: 555px) {
+  /* line 608, ../sass/screen.scss */
+  .helpSection #helpTitleSection #helpTitle #mobileTitle {
+    display: block;
+  }
+}
+/* line 616, ../sass/screen.scss */
+.helpSection #helpTitleSection #helpTitle h2 {
+  font-family: "Century Gothic";
+  color: white;
+  font-size: 5.5em;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 10px;
+  margin-top: 350px;
+  text-shadow: 10px 10px 5px rgba(0, 0, 0, 0.75);
+  text-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+@media only screen and (max-width: 555px) {
+  /* line 631, ../sass/screen.scss */
+  .helpSection #helpTitleSection #helpTitle h2 {
+    display: none;
+  }
+}
+/* line 645, ../sass/screen.scss */
+.helpSection #paper {
+  background-color: white;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  overflow: hidden;
+  z-index: 3;
+  transform: translateY(-126px);
+  -moz-box-shadow: 10px 10px 79px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 79px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 79px 0px rgba(0, 0, 0, 0.75);
+}
+/* line 660, ../sass/screen.scss */
+.helpSection #paper #row1 {
+  display: -webkit-flex;
+  display: flex;
+}
+/* line 664, ../sass/screen.scss */
+.helpSection #paper #row1 #picture {
+  background-image: url(../Images/Volunteer.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 405px;
+  width: 62%;
+  cursor: pointer;
+  text-align: center;
+  position: relative;
+}
+/* line 675, ../sass/screen.scss */
+.helpSection #paper #row1 #picture p {
+  color: white;
+  font-family: "Century Gothic";
+  font-weight: 700;
+  font-size: 1.8em;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  line-height: 1.3;
+  z-index: 2;
+  position: relative;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  -moz-transform: translateX(-120%);
+  -ms-transform: translateX(-120%);
+  -webkit-transform: translateX(-120%);
+  transform: translateX(-120%);
+}
+@media only screen and (max-width: 765px) {
+  /* line 695, ../sass/screen.scss */
+  .helpSection #paper #row1 #picture p {
+    font-size: 1.5em;
+  }
+}
+@media only screen and (max-width: 555px) {
+  /* line 705, ../sass/screen.scss */
+  .helpSection #paper #row1 #picture p {
+    margin-top: 80px;
+  }
+}
+/* line 713, ../sass/screen.scss */
+.helpSection #paper #row1 #picture #overlay {
+  content: "";
+  background-color: rgba(74, 180, 190, 0.74);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  -moz-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+@media only screen and (max-width: 555px) {
+  /* line 732, ../sass/screen.scss */
+  .helpSection #paper #row1 #picture {
+    width: 100%;
+    position: absolute;
+  }
+}
+/* line 741, ../sass/screen.scss */
+.helpSection #paper #row1 #picture:hover #overlay {
+  -moz-transform: translateX(0%);
+  -ms-transform: translateX(0%);
+  -webkit-transform: translateX(0%);
+  transform: translateX(0%);
+}
+/* line 747, ../sass/screen.scss */
+.helpSection #paper #row1 #picture:hover p {
+  -moz-transform: translateX(0%);
+  -ms-transform: translateX(0%);
+  -webkit-transform: translateX(0%);
+  transform: translateX(0%);
+}
+/* line 753, ../sass/screen.scss */
+.helpSection #paper #row1 #button {
+  width: 38%;
+  text-align: center;
+}
+/* line 758, ../sass/screen.scss */
+.helpSection #paper #row1 #button a {
+  font-family: "Century Gothic";
+  font-size: 2.5em;
+  color: white;
+  background-color: #015c65;
+  padding: 30px 60px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 165px;
+  position: relative;
+  border: 1px solid #015c65;
+  transform: translateZ(0) translateY(0);
+  transition: all .2s ease-in-out;
+}
+@media only screen and (max-width: 1200px) {
+  /* line 777, ../sass/screen.scss */
+  .helpSection #paper #row1 #button a {
+    padding: 30px 30px;
+  }
+}
+@media only screen and (max-width: 975px) {
+  /* line 787, ../sass/screen.scss */
+  .helpSection #paper #row1 #button a {
+    padding: 30px 15px;
+  }
+}
+@media only screen and (max-width: 665px) {
+  /* line 797, ../sass/screen.scss */
+  .helpSection #paper #row1 #button a {
+    font-size: 2.2em;
+    padding: 30px 10px;
+  }
+}
+@media only screen and (max-width: 555px) {
+  /* line 808, ../sass/screen.scss */
+  .helpSection #paper #row1 #button a {
+    margin-top: 275px;
+    z-index: 2;
+    padding: 30px 100px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  /* line 820, ../sass/screen.scss */
+  .helpSection #paper #row1 #button a {
+    width: 100%;
+    padding: 30px 0px;
+  }
+}
+/* line 829, ../sass/screen.scss */
+.helpSection #paper #row1 #button a:after {
+  content: "";
+  background-color: white;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  right: 50%;
+  opacity: 0;
+  z-index: -1;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+/* line 843, ../sass/screen.scss */
+.helpSection #paper #row1 #button a:hover {
+  color: #015c65;
+}
+/* line 849, ../sass/screen.scss */
+.helpSection #paper #row1 #button a:hover:after {
+  left: 0;
+  right: 0;
+  opacity: 1;
+}
+@media only screen and (max-width: 555px) {
+  /* line 863, ../sass/screen.scss */
+  .helpSection #paper #row1 #button {
+    width: 100%;
+    position: absolute;
+  }
+}
+@media only screen and (max-width: 555px) {
+  /* line 876, ../sass/screen.scss */
+  .helpSection #paper #row1 {
+    display: block;
+    height: 405px;
+  }
+}
+/* line 885, ../sass/screen.scss */
+.helpSection #paper #row2 {
+  display: -webkit-flex;
+  display: flex;
+}
+/* line 889, ../sass/screen.scss */
+.helpSection #paper #row2 #button {
+  width: 62%;
+  text-align: center;
+}
+/* line 894, ../sass/screen.scss */
+.helpSection #paper #row2 #button a {
+  font-family: "Century Gothic";
+  font-size: 2.5em;
+  color: white;
+  background-color: #015c65;
+  padding: 30px 100px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 165px;
+  border: 1px solid #015c65;
+  position: relative;
+  transform: translateZ(0) translateY(0);
+  transition: all .2s ease-in-out;
+}
+@media only screen and (max-width: 555px) {
+  /* line 913, ../sass/screen.scss */
+  .helpSection #paper #row2 #button a {
+    z-index: 2;
+    margin-top: 275px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  /* line 924, ../sass/screen.scss */
+  .helpSection #paper #row2 #button a {
+    width: 100%;
+    padding: 30px 0px;
+  }
+}
+/* line 933, ../sass/screen.scss */
+.helpSection #paper #row2 #button a:after {
+  content: "";
+  background-color: white;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  right: 50%;
+  opacity: 0;
+  z-index: -1;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+/* line 948, ../sass/screen.scss */
+.helpSection #paper #row2 #button a:hover {
+  color: #015c65;
+}
+/* line 954, ../sass/screen.scss */
+.helpSection #paper #row2 #button a:hover:after {
+  left: 0;
+  right: 0;
+  opacity: 1;
+}
+@media only screen and (max-width: 555px) {
+  /* line 966, ../sass/screen.scss */
+  .helpSection #paper #row2 #button {
+    width: 100%;
+    position: absolute;
+  }
+}
+/* line 975, ../sass/screen.scss */
+.helpSection #paper #row2 #picture {
+  background-image: url(../Images/Donations.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 405px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  width: 38.3%;
+}
+/* line 986, ../sass/screen.scss */
+.helpSection #paper #row2 #picture p {
+  color: white;
+  font-family: "Century Gothic";
+  font-weight: 700;
+  font-size: 1.8em;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  line-height: 1.3;
+  z-index: 2;
+  position: relative;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  -moz-transform: translateX(-125%);
+  -ms-transform: translateX(-125%);
+  -webkit-transform: translateX(-125%);
+  transform: translateX(-125%);
+}
+@media only screen and (max-width: 1666px) {
+  /* line 1006, ../sass/screen.scss */
+  .helpSection #paper #row2 #picture p {
+    margin-top: 50px;
+  }
+}
+@media only screen and (max-width: 1500px) {
+  /* line 1016, ../sass/screen.scss */
+  .helpSection #paper #row2 #picture p {
+    font-size: 1.6em;
+  }
+}
+@media only screen and (max-width: 1145px) {
+  /* line 1026, ../sass/screen.scss */
+  .helpSection #paper #row2 #picture p {
+    font-size: 1.4em;
+  }
+}
+@media only screen and (max-width: 1145px) {
+  /* line 1036, ../sass/screen.scss */
+  .helpSection #paper #row2 #picture p {
+    font-size: 1.2em;
+  }
+}
+@media only screen and (max-width: 555px) {
+  /* line 1047, ../sass/screen.scss */
+  .helpSection #paper #row2 #picture p {
+    z-index: 2;
+    font-size: 1.4em;
+  }
+}
+/* line 1056, ../sass/screen.scss */
+.helpSection #paper #row2 #picture #overlay {
+  content: "";
+  background-color: rgba(74, 180, 190, 0.74);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  -moz-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+@media only screen and (max-width: 555px) {
+  /* line 1075, ../sass/screen.scss */
+  .helpSection #paper #row2 #picture {
+    width: 100%;
+    position: absolute;
+  }
+}
+/* line 1086, ../sass/screen.scss */
+.helpSection #paper #row2 #picture:hover p {
+  -moz-transform: translateX(0%);
+  -ms-transform: translateX(0%);
+  -webkit-transform: translateX(0%);
+  transform: translateX(0%);
+}
+/* line 1092, ../sass/screen.scss */
+.helpSection #paper #row2 #picture:hover #overlay {
+  -moz-transform: translateX(0%);
+  -ms-transform: translateX(0%);
+  -webkit-transform: translateX(0%);
+  transform: translateX(0%);
+}
+@media only screen and (max-width: 555px) {
+  /* line 1104, ../sass/screen.scss */
+  .helpSection #paper #row2 {
+    display: block;
+    height: 405px;
+  }
+}
+/* line 1113, ../sass/screen.scss */
+.helpSection #paper #row3 {
+  display: -webkit-flex;
+  display: flex;
+}
+/* line 1117, ../sass/screen.scss */
+.helpSection #paper #row3 #picture {
+  background-image: url(../Images/FirstAidKit.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 405px;
+  position: relative;
+  cursor: pointer;
+  width: 62%;
+}
+/* line 1127, ../sass/screen.scss */
+.helpSection #paper #row3 #picture p {
+  color: white;
+  font-family: "Century Gothic";
+  font-weight: 700;
+  font-size: 1.8em;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  line-height: 1.3;
+  z-index: 2;
+  position: relative;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  -moz-transform: translateX(-125%);
+  -ms-transform: translateX(-125%);
+  -webkit-transform: translateX(-125%);
+  transform: translateX(-125%);
+}
+@media only screen and (max-width: 700px) {
+  /* line 1147, ../sass/screen.scss */
+  .helpSection #paper #row3 #picture p {
+    margin-top: 50px;
+  }
+}
+@media only screen and (max-width: 625px) {
+  /* line 1157, ../sass/screen.scss */
+  .helpSection #paper #row3 #picture p {
+    font-size: 1.6em;
+  }
+}
+@media only screen and (max-width: 555px) {
+  /* line 1167, ../sass/screen.scss */
+  .helpSection #paper #row3 #picture p {
+    font-size: 1.5em;
+  }
+}
+/* line 1175, ../sass/screen.scss */
+.helpSection #paper #row3 #picture #overlay {
+  content: "";
+  background-color: rgba(74, 180, 190, 0.74);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  -moz-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+@media only screen and (max-width: 555px) {
+  /* line 1194, ../sass/screen.scss */
+  .helpSection #paper #row3 #picture {
+    width: 100%;
+    position: absolute;
+  }
+}
+/* line 1205, ../sass/screen.scss */
+.helpSection #paper #row3 #picture:hover p {
+  -moz-transform: translateX(0%);
+  -ms-transform: translateX(0%);
+  -webkit-transform: translateX(0%);
+  transform: translateX(0%);
+}
+/* line 1211, ../sass/screen.scss */
+.helpSection #paper #row3 #picture:hover #overlay {
+  -moz-transform: translateX(0%);
+  -ms-transform: translateX(0%);
+  -webkit-transform: translateX(0%);
+  transform: translateX(0%);
+}
+/* line 1217, ../sass/screen.scss */
+.helpSection #paper #row3 #button {
+  width: 38%;
+  text-align: center;
+}
+/* line 1222, ../sass/screen.scss */
+.helpSection #paper #row3 #button a {
+  font-family: "Century Gothic";
+  font-size: 2.5em;
+  color: white;
+  background-color: #015c65;
+  padding: 30px 85px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 165px;
+  border: 1px solid #015c65;
+  position: relative;
+  transform: translateZ(0) translateY(0);
+  transition: all .2s ease-in-out;
+}
+@media only screen and (max-width: 1200px) {
+  /* line 1241, ../sass/screen.scss */
+  .helpSection #paper #row3 #button a {
+    padding: 30px 40px;
+  }
+}
+@media only screen and (max-width: 670px) {
+  /* line 1251, ../sass/screen.scss */
+  .helpSection #paper #row3 #button a {
+    font-size: 2.3em;
+    padding: 30px 20px;
+  }
+}
+@media only screen and (max-width: 555px) {
+  /* line 1262, ../sass/screen.scss */
+  .helpSection #paper #row3 #button a {
+    z-index: 2;
+    margin-top: 275px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  /* line 1273, ../sass/screen.scss */
+  .helpSection #paper #row3 #button a {
+    width: 100%;
+    padding: 30px 0px;
+  }
+}
+/* line 1282, ../sass/screen.scss */
+.helpSection #paper #row3 #button a:after {
+  content: "";
+  background-color: white;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  right: 50%;
+  opacity: 0;
+  z-index: -1;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+/* line 1297, ../sass/screen.scss */
+.helpSection #paper #row3 #button a:hover {
+  color: #015c65;
+}
+/* line 1303, ../sass/screen.scss */
+.helpSection #paper #row3 #button a:hover:after {
+  left: 0;
+  right: 0;
+  opacity: 1;
+}
+@media only screen and (max-width: 555px) {
+  /* line 1316, ../sass/screen.scss */
+  .helpSection #paper #row3 #button {
+    width: 100%;
+    position: absolute;
+  }
+}
+@media only screen and (max-width: 555px) {
+  /* line 1329, ../sass/screen.scss */
+  .helpSection #paper #row3 {
+    display: block;
+    height: 405px;
+  }
+}
+/* line 1338, ../sass/screen.scss */
+.helpSection #paper #row4 {
+  display: -webkit-flex;
+  display: flex;
+}
+/* line 1342, ../sass/screen.scss */
+.helpSection #paper #row4 #button {
+  width: 62%;
+  text-align: center;
+}
+/* line 1347, ../sass/screen.scss */
+.helpSection #paper #row4 #button a {
+  font-family: "Century Gothic";
+  font-size: 2.5em;
+  color: white;
+  background-color: #015c65;
+  padding: 30px 115px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 165px;
+  border: 1px solid #015c65;
+  position: relative;
+  transform: translateZ(0) translateY(0);
+  transition: all .2s ease-in-out;
+}
+@media only screen and (max-width: 555px) {
+  /* line 1366, ../sass/screen.scss */
+  .helpSection #paper #row4 #button a {
+    z-index: 2;
+    margin-top: 275px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  /* line 1377, ../sass/screen.scss */
+  .helpSection #paper #row4 #button a {
+    width: 100%;
+    padding: 30px 0px;
+  }
+}
+/* line 1386, ../sass/screen.scss */
+.helpSection #paper #row4 #button a:after {
+  content: "";
+  background-color: white;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  right: 50%;
+  opacity: 0;
+  z-index: -1;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+/* line 1401, ../sass/screen.scss */
+.helpSection #paper #row4 #button a:hover {
+  color: #015c65;
+}
+/* line 1407, ../sass/screen.scss */
+.helpSection #paper #row4 #button a:hover:after {
+  left: 0;
+  right: 0;
+  opacity: 1;
+}
+@media only screen and (max-width: 555px) {
+  /* line 1419, ../sass/screen.scss */
+  .helpSection #paper #row4 #button {
+    width: 100%;
+    position: absolute;
+  }
+}
+/* line 1428, ../sass/screen.scss */
+.helpSection #paper #row4 #picture {
+  background-image: url(../Images/RefugeeWorker.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 405px;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  width: 38.3%;
+}
+/* line 1439, ../sass/screen.scss */
+.helpSection #paper #row4 #picture p {
+  color: white;
+  font-family: "Century Gothic";
+  font-weight: 700;
+  font-size: 1.8em;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  line-height: 1.3;
+  z-index: 2;
+  position: relative;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  -moz-transform: translateX(-125%);
+  -ms-transform: translateX(-125%);
+  -webkit-transform: translateX(-125%);
+  transform: translateX(-125%);
+}
+@media only screen and (max-width: 1456px) {
+  /* line 1459, ../sass/screen.scss */
+  .helpSection #paper #row4 #picture p {
+    margin-top: 50px;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  /* line 1469, ../sass/screen.scss */
+  .helpSection #paper #row4 #picture p {
+    font-size: 1.6em;
+  }
+}
+@media only screen and (max-width: 1016px) {
+  /* line 1479, ../sass/screen.scss */
+  .helpSection #paper #row4 #picture p {
+    margin-top: 30px;
+  }
+}
+@media only screen and (max-width: 975px) {
+  /* line 1489, ../sass/screen.scss */
+  .helpSection #paper #row4 #picture p {
+    margin-top: 50px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  /* line 1499, ../sass/screen.scss */
+  .helpSection #paper #row4 #picture p {
+    margin-top: 30px;
+  }
+}
+@media only screen and (max-width: 775px) {
+  /* line 1509, ../sass/screen.scss */
+  .helpSection #paper #row4 #picture p {
+    margin-top: 50px;
+    font-size: 1.4em;
+  }
+}
+@media only screen and (max-width: 555px) {
+  /* line 1520, ../sass/screen.scss */
+  .helpSection #paper #row4 #picture p {
+    font-size: 1.4em;
+  }
+}
+/* line 1528, ../sass/screen.scss */
+.helpSection #paper #row4 #picture #overlay {
+  content: "";
+  background-color: rgba(74, 180, 190, 0.74);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  -moz-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+@media only screen and (max-width: 555px) {
+  /* line 1547, ../sass/screen.scss */
+  .helpSection #paper #row4 #picture {
+    width: 100%;
+    position: absolute;
+  }
+}
+/* line 1558, ../sass/screen.scss */
+.helpSection #paper #row4 #picture:hover p {
+  -moz-transform: translateX(0%);
+  -ms-transform: translateX(0%);
+  -webkit-transform: translateX(0%);
+  transform: translateX(0%);
+}
+/* line 1564, ../sass/screen.scss */
+.helpSection #paper #row4 #picture:hover #overlay {
+  -moz-transform: translateX(0%);
+  -ms-transform: translateX(0%);
+  -webkit-transform: translateX(0%);
+  transform: translateX(0%);
+}
+@media only screen and (max-width: 555px) {
+  /* line 1574, ../sass/screen.scss */
+  .helpSection #paper #row4 {
+    display: block;
+    height: 405px;
+  }
+}
+@media only screen and (max-width: 975px) {
+  /* line 1585, ../sass/screen.scss */
+  .helpSection #paper {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 555px) {
+  /* line 1597, ../sass/screen.scss */
+  .helpSection {
+    background-color: #4ab4be;
+  }
+}
+/* line 1605, ../sass/screen.scss */
+.eventsSection {
+  transform: translateY(-240px);
+  height: 1070px;
+}
+/* line 1610, ../sass/screen.scss */
+.eventsSection #eventsTitleSection {
+  background-color: #4ab4be;
+  height: 800px;
+  text-align: center;
+}
+/* line 1616, ../sass/screen.scss */
+.eventsSection #eventsTitleSection #eventsTitle {
+  overflow: hidden;
+}
+/* line 1620, ../sass/screen.scss */
+.eventsSection #eventsTitleSection #eventsTitle h2 {
+  font-family: "Century Gothic";
+  color: white;
+  font-size: 5.5em;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: 350px;
+  padding: 10px;
+  text-shadow: 10px 10px 5px rgba(0, 0, 0, 0.75);
+  text-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+@media only screen and (max-width: 555px) {
+  /* line 1635, ../sass/screen.scss */
+  .eventsSection #eventsTitleSection #eventsTitle h2 {
+    margin-top: 0;
+  }
+}
+/* line 1647, ../sass/screen.scss */
+.eventsSection #paper {
+  background-color: white;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  overflow: hidden;
+  z-index: 3;
+  transform: translateY(-126px);
+  -moz-box-shadow: 10px 10px 79px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 79px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 79px 0px rgba(0, 0, 0, 0.75);
+}
+/* line 1659, ../sass/screen.scss */
+.eventsSection #paper #row1 {
+  display: -webkit-flex;
+  display: flex;
+}
+/* line 1663, ../sass/screen.scss */
+.eventsSection #paper #row1 #text {
+  width: 50%;
+  text-align: center;
+}
+/* line 1668, ../sass/screen.scss */
+.eventsSection #paper #row1 #text p {
+  font-family: "Century Gothic";
+  color: #029aa8;
+  font-size: 1.8em;
+  margin-top: 100px;
+  margin-left: 20px;
+}
+/* line 1676, ../sass/screen.scss */
+.eventsSection #paper #row1 #text p span {
+  font-weight: 600;
+  font-size: 1.8em;
+}
+@media only screen and (max-width: 973px) {
+  /* line 1687, ../sass/screen.scss */
+  .eventsSection #paper #row1 #text p {
+    margin-top: 50px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  /* line 1697, ../sass/screen.scss */
+  .eventsSection #paper #row1 #text p {
+    font-size: 1.5em;
+  }
+}
+/* line 1705, ../sass/screen.scss */
+.eventsSection #paper #row1 #text h3 {
+  font-family: "Century Gothic";
+  color: #029aa8;
+  font-size: 2.4em;
+  font-weight: 600;
+}
+@media only screen and (max-width: 815px) {
+  /* line 1718, ../sass/screen.scss */
+  .eventsSection #paper #row1 #text {
+    width: 100%;
+  }
+}
+/* line 1728, ../sass/screen.scss */
+.eventsSection #paper #row1 #button {
+  width: 50%;
+  height: 340px;
+}
+/* line 1733, ../sass/screen.scss */
+.eventsSection #paper #row1 #button a {
+  background-color: #ff0d00;
+  color: white;
+  border: 1px solid #ff0d00;
+  width: 50%;
+  height: 20%;
+  padding: 0;
+  padding-top: 25px;
+  margin-top: 120px;
+}
+@media only screen and (max-width: 400px) {
+  /* line 1748, ../sass/screen.scss */
+  .eventsSection #paper #row1 #button a {
+    width: 80%;
+  }
+}
+/* line 1756, ../sass/screen.scss */
+.eventsSection #paper #row1 #button a:hover {
+  color: #ff0d00;
+}
+@media only screen and (max-width: 815px) {
+  /* line 1766, ../sass/screen.scss */
+  .eventsSection #paper #row1 #button {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 815px) {
+  /* line 1778, ../sass/screen.scss */
+  .eventsSection #paper #row1 {
+    display: block;
+  }
+}
+/* line 1786, ../sass/screen.scss */
+.eventsSection #paper hr {
+  border-color: #029aa8;
+  width: 90%;
+  border-style: solid;
+}
+/* line 1794, ../sass/screen.scss */
+.eventsSection #paper #row2 {
+  display: -webkit-flex;
+  display: flex;
+}
+/* line 1798, ../sass/screen.scss */
+.eventsSection #paper #row2 #button {
+  width: 50%;
+  height: 340px;
+}
+/* line 1803, ../sass/screen.scss */
+.eventsSection #paper #row2 #button a {
+  background-color: #ff0d00;
+  color: white;
+  border: 1px solid #ff0d00;
+  width: 50%;
+  height: 20%;
+  padding: 0;
+  padding-top: 25px;
+  margin-top: 120px;
+}
+@media only screen and (max-width: 1132px) {
+  /* line 1818, ../sass/screen.scss */
+  .eventsSection #paper #row2 #button a {
+    font-size: 2.2em;
+  }
+}
+@media only screen and (max-width: 989px) {
+  /* line 1828, ../sass/screen.scss */
+  .eventsSection #paper #row2 #button a {
+    font-size: 1.8em;
+  }
+}
+@media only screen and (max-width: 815px) {
+  /* line 1838, ../sass/screen.scss */
+  .eventsSection #paper #row2 #button a {
+    font-size: 2.4em;
+  }
+}
+@media only screen and (max-width: 665px) {
+  /* line 1848, ../sass/screen.scss */
+  .eventsSection #paper #row2 #button a {
+    font-size: 2.2em;
+  }
+}
+@media only screen and (max-width: 400px) {
+  /* line 1858, ../sass/screen.scss */
+  .eventsSection #paper #row2 #button a {
+    width: 80%;
+  }
+}
+/* line 1866, ../sass/screen.scss */
+.eventsSection #paper #row2 #button a:hover {
+  color: #ff0d00;
+}
+@media only screen and (max-width: 815px) {
+  /* line 1876, ../sass/screen.scss */
+  .eventsSection #paper #row2 #button {
+    width: 100%;
+    position: absolute;
+    margin-top: 100px;
+  }
+}
+/* line 1888, ../sass/screen.scss */
+.eventsSection #paper #row2 #text {
+  width: 50%;
+  text-align: center;
+}
+/* line 1893, ../sass/screen.scss */
+.eventsSection #paper #row2 #text p {
+  font-family: "Century Gothic";
+  color: #029aa8;
+  font-size: 1.8em;
+  margin-top: 100px;
+}
+/* line 1900, ../sass/screen.scss */
+.eventsSection #paper #row2 #text p span {
+  font-weight: 600;
+  font-size: 1.8em;
+}
+/* line 1909, ../sass/screen.scss */
+.eventsSection #paper #row2 #text h3 {
+  font-family: "Century Gothic";
+  color: #029aa8;
+  font-size: 1.8em;
+  font-weight: 600;
+}
+@media only screen and (max-width: 815px) {
+  /* line 1922, ../sass/screen.scss */
+  .eventsSection #paper #row2 #text {
+    width: 100%;
+    position: absolute;
+    margin-top: -50px;
+  }
+}
+@media only screen and (max-width: 815px) {
+  /* line 1936, ../sass/screen.scss */
+  .eventsSection #paper #row2 {
+    display: block;
+    height: 350px;
+    position: relative;
+  }
+}
+/* line 1946, ../sass/screen.scss */
+.eventsSection #paper #row3 {
+  display: -webkit-flex;
+  display: flex;
+}
+/* line 1950, ../sass/screen.scss */
+.eventsSection #paper #row3 #text {
+  width: 50%;
+  text-align: center;
+}
+/* line 1955, ../sass/screen.scss */
+.eventsSection #paper #row3 #text p {
+  font-family: "Century Gothic";
+  color: #029aa8;
+  font-size: 1.8em;
+  margin-top: 100px;
+}
+/* line 1962, ../sass/screen.scss */
+.eventsSection #paper #row3 #text p span {
+  font-weight: 600;
+  font-size: 1.8em;
+}
+/* line 1971, ../sass/screen.scss */
+.eventsSection #paper #row3 #text h3 {
+  font-family: "Century Gothic";
+  color: #029aa8;
+  font-size: 1.8em;
+  font-weight: 600;
+}
+@media only screen and (max-width: 815px) {
+  /* line 1984, ../sass/screen.scss */
+  .eventsSection #paper #row3 #text {
+    width: 100%;
+    position: absolute;
+    margin-top: -50px;
+  }
+}
+/* line 1994, ../sass/screen.scss */
+.eventsSection #paper #row3 #button {
+  width: 50%;
+  height: 340px;
+}
+/* line 1999, ../sass/screen.scss */
+.eventsSection #paper #row3 #button a {
+  background-color: #ff0d00;
+  color: white;
+  border: 1px solid #ff0d00;
+  width: 50%;
+  height: 20%;
+  padding: 0;
+  padding-top: 25px;
+  margin-top: 120px;
+}
+@media only screen and (max-width: 665px) {
+  /* line 2014, ../sass/screen.scss */
+  .eventsSection #paper #row3 #button a {
+    font-size: 2.2em;
+  }
+}
+@media only screen and (max-width: 400px) {
+  /* line 2024, ../sass/screen.scss */
+  .eventsSection #paper #row3 #button a {
+    width: 80%;
+  }
+}
+/* line 2032, ../sass/screen.scss */
+.eventsSection #paper #row3 #button a:hover {
+  color: #ff0d00;
+}
+@media only screen and (max-width: 815px) {
+  /* line 2042, ../sass/screen.scss */
+  .eventsSection #paper #row3 #button {
+    position: absolute;
+    width: 100%;
+    margin-top: 100px;
+  }
+}
+@media only screen and (max-width: 815px) {
+  /* line 2056, ../sass/screen.scss */
+  .eventsSection #paper #row3 {
+    display: block;
+    position: relative;
+    height: 350px;
+  }
+}
+@media only screen and (max-width: 815px) {
+  /* line 2070, ../sass/screen.scss */
+  .eventsSection #paper {
+    width: 90%;
+  }
+}
+
+/* line 2080, ../sass/screen.scss */
+.contactSection {
+  transform: translateY(-270px);
+  height: 800px;
+}
+/* line 2085, ../sass/screen.scss */
+.contactSection #contactTitleSection {
+  background-color: #4ab4be;
+  height: 800px;
+  text-align: center;
+}
+/* line 2091, ../sass/screen.scss */
+.contactSection #contactTitleSection #contactTitle {
+  overflow: hidden;
+}
+/* line 2095, ../sass/screen.scss */
+.contactSection #contactTitleSection #contactTitle h2 {
+  font-family: "Century Gothic";
+  color: white;
+  font-size: 5.5em;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: 350px;
+  padding: 10px;
+  text-shadow: 10px 10px 5px rgba(0, 0, 0, 0.75);
+  text-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+@media only screen and (max-width: 555px) {
+  /* line 2110, ../sass/screen.scss */
+  .contactSection #contactTitleSection #contactTitle h2 {
+    margin-top: 250px;
+  }
+}
+@media only screen and (max-width: 435px) {
+  /* line 2120, ../sass/screen.scss */
+  .contactSection #contactTitleSection #contactTitle h2 {
+    font-size: 4.5em;
+  }
+}
+/* line 2132, ../sass/screen.scss */
+.contactSection #paper {
+  background-color: white;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  overflow: hidden;
+  z-index: 3;
+  transform: translateY(-126px);
+  -moz-box-shadow: 10px 10px 79px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 79px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 79px 0px rgba(0, 0, 0, 0.75);
+}
+/* line 2144, ../sass/screen.scss */
+.contactSection #paper form {
+  		/* @media only screen and (max-width: 445px) {
+  
+  			.submitButton {
+  
+  				font-size: 1.4em;
+  
+  			}
+  
+  		} */
+}
+/* line 2146, ../sass/screen.scss */
+.contactSection #paper form #formHeader {
+  background-color: #029aa8;
+  text-align: center;
+  height: 212px;
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+/* line 2153, ../sass/screen.scss */
+.contactSection #paper form #formHeader #left {
+  display: -webkit-flex;
+  display: flex;
+  float: left;
+}
+/* line 2158, ../sass/screen.scss */
+.contactSection #paper form #formHeader #left img {
+  margin: 20px;
+}
+@media only screen and (max-width: 825px) {
+  /* line 2166, ../sass/screen.scss */
+  .contactSection #paper form #formHeader #left img {
+    width: 35%;
+    height: 35%;
+  }
+}
+/* line 2175, ../sass/screen.scss */
+.contactSection #paper form #formHeader #left p {
+  font-family: "Century Gothic";
+  color: white;
+  font-size: 2em;
+  width: 20%;
+  margin-top: 55px;
+}
+/* line 2183, ../sass/screen.scss */
+.contactSection #paper form #formHeader #left p span {
+  font-size: .6em;
+}
+@media only screen and (max-width: 825px) {
+  /* line 2193, ../sass/screen.scss */
+  .contactSection #paper form #formHeader #left p {
+    font-size: 1.5em;
+    margin-top: 25px;
+  }
+}
+@media only screen and (max-width: 490px) {
+  /* line 2204, ../sass/screen.scss */
+  .contactSection #paper form #formHeader #left p {
+    font-size: 1em;
+  }
+}
+@media only screen and (max-width: 1167px) {
+  /* line 2217, ../sass/screen.scss */
+  .contactSection #paper form #formHeader #left {
+    width: 50%;
+  }
+}
+/* line 2225, ../sass/screen.scss */
+.contactSection #paper form #formHeader #right {
+  text-align: center;
+  float: right;
+  width: 18%;
+}
+/* line 2231, ../sass/screen.scss */
+.contactSection #paper form #formHeader #right p {
+  color: white;
+  font-family: "Century Gothic";
+  font-size: 1.6em;
+  margin-top: 55px;
+  margin-right: 20px;
+}
+/* line 2239, ../sass/screen.scss */
+.contactSection #paper form #formHeader #right p span {
+  font-weight: 700;
+  font-size: 1.1em;
+}
+@media only screen and (max-width: 1267px) {
+  /* line 2250, ../sass/screen.scss */
+  .contactSection #paper form #formHeader #right p {
+    font-size: 1.2em;
+  }
+}
+@media only screen and (max-width: 855px) {
+  /* line 2260, ../sass/screen.scss */
+  .contactSection #paper form #formHeader #right p {
+    margin-top: 70px;
+  }
+}
+@media only screen and (max-width: 825px) {
+  /* line 2270, ../sass/screen.scss */
+  .contactSection #paper form #formHeader #right p {
+    margin-top: 33px;
+  }
+}
+@media only screen and (max-width: 520px) {
+  /* line 2280, ../sass/screen.scss */
+  .contactSection #paper form #formHeader #right p {
+    font-size: 1em;
+  }
+}
+@media only screen and (max-width: 371px) {
+  /* line 2290, ../sass/screen.scss */
+  .contactSection #paper form #formHeader #right p {
+    font-size: .9em;
+  }
+}
+@media only screen and (max-width: 1616px) {
+  /* line 2302, ../sass/screen.scss */
+  .contactSection #paper form #formHeader #right {
+    width: 30%;
+  }
+}
+@media only screen and (max-width: 1267px) {
+  /* line 2312, ../sass/screen.scss */
+  .contactSection #paper form #formHeader #right {
+    width: 24%;
+  }
+}
+@media only screen and (max-width: 946px) {
+  /* line 2322, ../sass/screen.scss */
+  .contactSection #paper form #formHeader #right {
+    width: 40%;
+  }
+}
+@media only screen and (max-width: 825px) {
+  /* line 2336, ../sass/screen.scss */
+  .contactSection #paper form #formHeader {
+    height: 145px;
+  }
+}
+/* line 2344, ../sass/screen.scss */
+.contactSection #paper form .nameInput {
+  text-align: center;
+}
+/* line 2348, ../sass/screen.scss */
+.contactSection #paper form .nameInput input {
+  width: 65%;
+  height: 100px;
+  text-align: center;
+  background-color: #015c65;
+  border: none;
+  margin-top: 50px;
+  font-family: "Century Gothic";
+  font-size: 2em;
+  color: white;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+/* line 61, ../../../../../Ruby21/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/css3/_user-interface.scss */
+.contactSection #paper form .nameInput input:-moz-placeholder {
+  color: white;
+}
+/* line 64, ../../../../../Ruby21/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/css3/_user-interface.scss */
+.contactSection #paper form .nameInput input::-moz-placeholder {
+  color: white;
+}
+/* line 67, ../../../../../Ruby21/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/css3/_user-interface.scss */
+.contactSection #paper form .nameInput input:-ms-input-placeholder {
+  color: white;
+}
+/* line 56, ../../../../../Ruby21/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/css3/_user-interface.scss */
+.contactSection #paper form .nameInput input::-webkit-input-placeholder {
+  color: white;
+}
+@media only screen and (max-width: 666px) {
+  /* line 2370, ../sass/screen.scss */
+  .contactSection #paper form .nameInput input {
+    margin-top: 20px;
+  }
+}
+@media only screen and (max-width: 533px) {
+  /* line 2380, ../sass/screen.scss */
+  .contactSection #paper form .nameInput input {
+    font-size: 1.6em;
+  }
+}
+@media only screen and (max-width: 445px) {
+  /* line 2390, ../sass/screen.scss */
+  .contactSection #paper form .nameInput input {
+    font-size: 1.4em;
+  }
+}
+@media only screen and (max-width: 400px) {
+  /* line 2400, ../sass/screen.scss */
+  .contactSection #paper form .nameInput input {
+    width: 90%;
+  }
+}
+/* line 2408, ../sass/screen.scss */
+.contactSection #paper form .nameInput input:focus {
+  background-color: #4ab4be;
+  outline: none;
+}
+/* line 61, ../../../../../Ruby21/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/css3/_user-interface.scss */
+.contactSection #paper form .nameInput input:focus:-moz-placeholder {
+  opacity: 0;
+}
+/* line 64, ../../../../../Ruby21/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/css3/_user-interface.scss */
+.contactSection #paper form .nameInput input:focus::-moz-placeholder {
+  opacity: 0;
+}
+/* line 67, ../../../../../Ruby21/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/css3/_user-interface.scss */
+.contactSection #paper form .nameInput input:focus:-ms-input-placeholder {
+  opacity: 0;
+}
+/* line 56, ../../../../../Ruby21/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/css3/_user-interface.scss */
+.contactSection #paper form .nameInput input:focus::-webkit-input-placeholder {
+  opacity: 0;
+}
+/* line 2422, ../sass/screen.scss */
+.contactSection #paper form .emailInput {
+  text-align: center;
+}
+/* line 2426, ../sass/screen.scss */
+.contactSection #paper form .emailInput input {
+  width: 65%;
+  height: 100px;
+  text-align: center;
+  background-color: #015c65;
+  border: none;
+  margin-top: 50px;
+  font-family: "Century Gothic";
+  font-size: 2em;
+  color: white;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+/* line 61, ../../../../../Ruby21/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/css3/_user-interface.scss */
+.contactSection #paper form .emailInput input:-moz-placeholder {
+  color: white;
+}
+/* line 64, ../../../../../Ruby21/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/css3/_user-interface.scss */
+.contactSection #paper form .emailInput input::-moz-placeholder {
+  color: white;
+}
+/* line 67, ../../../../../Ruby21/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/css3/_user-interface.scss */
+.contactSection #paper form .emailInput input:-ms-input-placeholder {
+  color: white;
+}
+/* line 56, ../../../../../Ruby21/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/css3/_user-interface.scss */
+.contactSection #paper form .emailInput input::-webkit-input-placeholder {
+  color: white;
+}
+@media only screen and (max-width: 666px) {
+  /* line 2448, ../sass/screen.scss */
+  .contactSection #paper form .emailInput input {
+    margin-top: 20px;
+  }
+}
+@media only screen and (max-width: 533px) {
+  /* line 2458, ../sass/screen.scss */
+  .contactSection #paper form .emailInput input {
+    font-size: 1.6em;
+  }
+}
+@media only screen and (max-width: 445px) {
+  /* line 2468, ../sass/screen.scss */
+  .contactSection #paper form .emailInput input {
+    font-size: 1.4em;
+  }
+}
+@media only screen and (max-width: 400px) {
+  /* line 2478, ../sass/screen.scss */
+  .contactSection #paper form .emailInput input {
+    width: 90%;
+  }
+}
+/* line 2486, ../sass/screen.scss */
+.contactSection #paper form .emailInput input:focus {
+  background-color: #4ab4be;
+  outline: none;
+}
+/* line 61, ../../../../../Ruby21/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/css3/_user-interface.scss */
+.contactSection #paper form .emailInput input:focus:-moz-placeholder {
+  opacity: 0;
+}
+/* line 64, ../../../../../Ruby21/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/css3/_user-interface.scss */
+.contactSection #paper form .emailInput input:focus::-moz-placeholder {
+  opacity: 0;
+}
+/* line 67, ../../../../../Ruby21/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/css3/_user-interface.scss */
+.contactSection #paper form .emailInput input:focus:-ms-input-placeholder {
+  opacity: 0;
+}
+/* line 56, ../../../../../Ruby21/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/css3/_user-interface.scss */
+.contactSection #paper form .emailInput input:focus::-webkit-input-placeholder {
+  opacity: 0;
+}
+/* line 2500, ../sass/screen.scss */
+.contactSection #paper form .messageInput {
+  text-align: center;
+}
+/* line 2504, ../sass/screen.scss */
+.contactSection #paper form .messageInput textarea {
+  width: 65%;
+  height: 200px;
+  text-align: center;
+  background-color: #015c65;
+  border: none;
+  margin-top: 50px;
+  padding-top: 20px;
+  font-family: "Century Gothic";
+  font-size: 2em;
+  color: white;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+/* line 61, ../../../../../Ruby21/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/css3/_user-interface.scss */
+.contactSection #paper form .messageInput textarea:-moz-placeholder {
+  color: white;
+}
+/* line 64, ../../../../../Ruby21/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/css3/_user-interface.scss */
+.contactSection #paper form .messageInput textarea::-moz-placeholder {
+  color: white;
+}
+/* line 67, ../../../../../Ruby21/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/css3/_user-interface.scss */
+.contactSection #paper form .messageInput textarea:-ms-input-placeholder {
+  color: white;
+}
+/* line 56, ../../../../../Ruby21/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/css3/_user-interface.scss */
+.contactSection #paper form .messageInput textarea::-webkit-input-placeholder {
+  color: white;
+}
+@media only screen and (max-width: 666px) {
+  /* line 2527, ../sass/screen.scss */
+  .contactSection #paper form .messageInput textarea {
+    margin-top: 20px;
+  }
+}
+@media only screen and (max-width: 533px) {
+  /* line 2537, ../sass/screen.scss */
+  .contactSection #paper form .messageInput textarea {
+    font-size: 1.6em;
+  }
+}
+@media only screen and (max-width: 445px) {
+  /* line 2547, ../sass/screen.scss */
+  .contactSection #paper form .messageInput textarea {
+    font-size: 1.4em;
+  }
+}
+@media only screen and (max-width: 400px) {
+  /* line 2557, ../sass/screen.scss */
+  .contactSection #paper form .messageInput textarea {
+    width: 90%;
+  }
+}
+/* line 2565, ../sass/screen.scss */
+.contactSection #paper form .messageInput textarea:focus {
+  background-color: #4ab4be;
+  outline: none;
+}
+/* line 61, ../../../../../Ruby21/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/css3/_user-interface.scss */
+.contactSection #paper form .messageInput textarea:focus:-moz-placeholder {
+  opacity: 0;
+}
+/* line 64, ../../../../../Ruby21/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/css3/_user-interface.scss */
+.contactSection #paper form .messageInput textarea:focus::-moz-placeholder {
+  opacity: 0;
+}
+/* line 67, ../../../../../Ruby21/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/css3/_user-interface.scss */
+.contactSection #paper form .messageInput textarea:focus:-ms-input-placeholder {
+  opacity: 0;
+}
+/* line 56, ../../../../../Ruby21/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/css3/_user-interface.scss */
+.contactSection #paper form .messageInput textarea:focus::-webkit-input-placeholder {
+  opacity: 0;
+}
+/* line 2579, ../sass/screen.scss */
+.contactSection #paper form .submitButton {
+  background-color: #ff0d00;
+  color: white;
+  font-family: "Century Gothic";
+  font-size: 2em;
+  cursor: pointer;
+  border: 1px solid #ff0d00;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: block;
+  width: 30%;
+  height: 100px;
+  text-align: center;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+@media only screen and (max-width: 815px) {
+  /* line 2611, ../sass/screen.scss */
+  .contactSection #paper form .submitButton {
+    width: 65%;
+  }
+}
+@media only screen and (max-width: 400px) {
+  /* line 2621, ../sass/screen.scss */
+  .contactSection #paper form .submitButton {
+    width: 90%;
+  }
+}
+/* line 2629, ../sass/screen.scss */
+.contactSection #paper form .submitButton:hover {
+  background-color: white;
+  color: #ff0d00;
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+@media only screen and (max-width: 666px) {
+  /* line 2646, ../sass/screen.scss */
+  .contactSection #paper {
+    width: 90%;
+  }
+}
+
+/* line 2656, ../sass/screen.scss */
+.footer {
+  background-color: #015c65;
+  height: 400px;
+  overflow: hidden;
+  transform: translateY(-200px);
+}
+/* line 2663, ../sass/screen.scss */
+.footer #left {
+  display: -webkit-flex;
+  display: flex;
+  margin-top: 200px;
+  position: absolute;
+  bottom: 0;
+}
+@media only screen and (max-width: 595px) {
+  /* line 2678, ../sass/screen.scss */
+  .footer #left img {
+    width: 30%;
+    height: 30%;
+  }
+}
+/* line 2687, ../sass/screen.scss */
+.footer #left h3 {
+  font-family: "Century Gothic";
+  color: white;
+  font-size: 2em;
+  width: 20%;
+  margin-top: 35px;
+  margin-left: 10px;
+}
+/* line 2696, ../sass/screen.scss */
+.footer #left h3 span {
+  font-size: .6em;
+}
+/* line 2702, ../sass/screen.scss */
+.footer #left h3 #tiny {
+  font-size: .3em;
+}
+@media only screen and (max-width: 556px) {
+  /* line 2711, ../sass/screen.scss */
+  .footer #left h3 {
+    width: 80%;
+    margin-right: 50px;
+  }
+}
+@media only screen and (max-width: 988px) {
+  /* line 2726, ../sass/screen.scss */
+  .footer #left {
+    right: 0;
+  }
+}
+/* line 2735, ../sass/screen.scss */
+.footer #right {
+  position: absolute;
+  bottom: 100px;
+  right: 40px;
+}
+/* line 2743, ../sass/screen.scss */
+.footer #right nav a {
+  font-family: "Century Gothic";
+  color: white;
+  font-size: 1.5em;
+  text-decoration: none;
+  margin: 0px 20px;
+  white-space: nowrap;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+@media only screen and (max-width: 673px) {
+  /* line 2757, ../sass/screen.scss */
+  .footer #right nav a {
+    margin: 0px 10px;
+  }
+}
+/* line 2765, ../sass/screen.scss */
+.footer #right nav a:hover {
+  color: #4ab4be;
+}
+@media only screen and (max-width: 988px) {
+  /* line 2779, ../sass/screen.scss */
+  .footer #right {
+    bottom: 200px;
+  }
+}
+
+@media only screen and (max-width: 573px) {
+  /* line 2791, ../sass/screen.scss */
+  .footer {
+    text-align: center;
+  }
+}
+/* line 2799, ../sass/screen.scss */
+.moved {
+  -moz-transform: translateX(0%) !important;
+  -ms-transform: translateX(0%) !important;
+  -webkit-transform: translateX(0%) !important;
+  transform: translateX(0%) !important;
+}

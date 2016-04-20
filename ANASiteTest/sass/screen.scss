@@ -1,0 +1,2803 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+
+
+@import "compass/reset";
+@import "compass/css3/flexbox";
+@import "compass/css3";
+@import "compass/css3/user-interface";
+
+
+
+
+$primary-color: #029aa8;
+$light-color: #4ab4be;
+$dark-color: #015c65;
+$red-color: #ff0d00;
+$main-font: 'Century Gothic';
+
+
+html {
+	
+	@include transition(all .5s ease-in-out);
+
+}
+
+#navBar {
+
+	overflow: hidden;
+	
+	img {
+
+		float: left;
+		height: 100px;
+
+	}
+
+	p {
+
+		color: $red-color;
+		font-weight: 700;
+		font-family: $main-font;
+		font-size: 3em;
+		margin: 25px 0px 0px 20px;
+		float: left;
+
+	}
+
+	nav {
+
+		float: right;
+		margin-right: 20px;
+		height: 110px;
+		
+
+		a {
+
+			font-family: $main-font;
+			text-decoration: none;
+			padding: 40px 60px 35px 60px;
+			font-size: 1.5em;
+			color: $primary-color;
+			display: inline-block;
+			transition: all .2s ease-in-out;
+
+		}
+
+		@media only screen and (max-width: 1142px) {
+
+			a{
+
+				padding: 40px 30px;
+
+			}
+
+		}
+
+		@media only screen and (max-width: 842px) {
+
+			a{
+
+				padding: 40px 10px;
+
+			}
+
+		}
+
+		@media only screen and (max-width: 642px) {
+
+			a{
+
+				padding: 40px 5px;
+
+			}
+
+		}
+
+		@media only screen and (max-width: 555px) {
+
+		a {
+
+			padding: 20px 5px;
+			color: white;
+
+		}
+
+	}
+
+		/* @media only screen and (max-width: 592px) {
+
+			a{
+
+				font-size: 1.2em;
+
+			}
+
+		} */
+
+		/* @media only screen and (max-width: 494px) {
+
+			a{
+
+				font-size: 1em;
+
+			}
+
+		} */
+
+		a:hover {
+
+			color: white;
+			background-color: $primary-color;
+			@include box-shadow(10px 10px 5px 0px rgba(0,0,0,0.75));
+
+		}
+
+
+
+	}
+
+	@media only screen and (max-width: 575px) {
+
+		nav {
+
+			margin-right: 0;
+
+		}
+
+	}
+
+	@media only screen and (max-width: 555px) {
+
+		nav {
+
+			height: 160px;
+			text-align: center;
+			background-color: $dark-color;
+
+		}
+
+	}
+	
+}
+
+.heroSection {
+	
+	background-image: url(../Images/HeroImage.jpg);
+	background-position: center;
+	text-align: center;
+	height: 887px;
+	position: relative;
+	z-index: 2;
+	overflow: hidden;
+
+	h1 {
+
+		font-size: 6em;
+		font-family: $main-font;
+		font-weight: 900;
+		color: white;
+		margin-top: 285px;
+		line-height: 1.2;
+		@include text-shadow(10px 10px 5px 0px rgba(0,0,0,0.75));
+
+		span {
+
+			font-size: 1.5em;
+			text-transform: uppercase;
+
+		}
+
+	}
+
+	@media only screen and (max-width: 864px) {
+
+		h1 {
+
+			font-size: 4em;
+
+		}
+
+	}
+
+	@media only screen and (max-width: 575px) {
+
+		h1 {
+
+			font-size: 3em;
+
+		}
+
+	}
+
+	@media only screen and (max-width: 435px) {
+
+		h1 {
+
+			font-size: 2.5em;
+
+		}
+
+	}
+
+}
+
+.aboutSection {
+	
+	#paper {
+
+		background-color: white;
+		width: 70%;
+		margin-left: auto;
+		margin-right: auto;
+		position: relative;
+		overflow: hidden;
+		z-index: 3;
+		//@include display-flex;
+		transform: translateY(-55px);
+		@include box-shadow(10px 10px 79px 0px rgba(0,0,0,0.75));
+
+		#row1 {
+
+			@include display-flex;
+
+			#button{
+
+				width: 35%;
+				text-align: center;
+
+				a {
+
+					background-color: $red-color;
+					text-decoration: none;
+					font-family: $main-font;
+					font-size: 2.5em;
+					color: white;
+					padding: 30px 80px;
+					display: inline-block;
+					border: 1px solid $red-color;
+					margin-top: 165px;
+					position: relative;
+					transform: translateZ(0) translateY(0);
+					transition: all .2s ease-in-out;
+				}
+
+				@media only screen and (max-width: 1684px) {
+
+					a {
+
+						margin-bottom: 125px;
+
+					}
+
+				}
+
+				@media only screen and (max-width: 1025px) {
+
+					a {
+
+						padding: 30px 40px;
+
+					}
+
+				}
+
+				@media only screen and (max-width: 775px) {
+
+					a {
+
+						padding: 30px 20px;
+
+					}
+
+				}
+
+				@media only screen and (max-width: 645px) {
+
+					a {
+
+						font-size: 2.2em;
+						padding: 30px 10px;
+
+					}
+
+				}
+
+
+
+				a:after {
+
+					content:"";
+					background-color: white;
+					position: absolute;
+					top: 0;
+					bottom: 0;
+					left: 50%;
+					right: 50%;
+					opacity: 0;
+					z-index: -1;
+					@include transition(all .2s ease-in-out);
+
+				}
+
+				a:hover {
+
+					color: $red-color;
+
+				}
+
+				a:hover:after {
+
+					left: 0;
+					right: 0;
+					opacity: 1;
+					
+				}
+
+				
+
+			}
+
+			@media only screen and (max-width: 555px) {
+
+				#button {
+
+					width: 100%;
+					position: absolute;
+					z-index: 3;
+
+				}
+
+			}
+
+			#picture {
+
+				width: 65%;
+				background-image: url(../Images/Donate.jpg);
+				background-position: center;
+				background-repeat: no-repeat;
+				height: 443px;
+
+
+			}
+
+			@media only screen and (max-width: 1684px) {
+
+				#picture {
+
+					height: initial;
+
+				}
+
+			}
+
+			@media only screen and (max-width: 555px) {
+
+				#picture {
+
+					width: 100%;
+					height: 443px;
+					position: absolute;
+
+				}
+
+			}
+
+
+
+		}
+
+		@media only screen and (max-width: 555px) {
+
+			#row1 {
+
+				display: block;
+				height: 443px;
+
+			}
+
+		}
+
+		#row2 {
+
+			@include display-flex;
+
+			#picture2 {
+
+				width: 35%;
+				height: 442px;
+				background-image: url(../Images/ANAHouse.jpg);
+				background-repeat: no-repeat;
+
+			}
+
+			@media only screen and (max-width: 972px) {
+
+				#picture2 {
+
+					height: initial;
+
+				}
+
+			}
+
+			@media only screen and (max-width: 555px) {
+
+				#picture2 {
+
+					height: 442px;
+					width: 100%;
+
+				}
+
+			}
+
+			#aboutUs{
+
+				width: 65%;
+
+				#title {
+
+					text-align: right;
+
+					h2 {
+
+						font-family: $main-font;
+						color: $primary-color;
+						font-weight: 700;
+						text-transform: uppercase;
+						font-size: 3.5em;
+						margin-right: 40px;
+						margin-top: 20px;
+						margin-bottom: 20px;
+
+					}
+
+				}
+
+				hr {
+
+					border-color: $primary-color;
+					width: 90%;
+					border-style: solid;
+
+				}
+
+				#blurb {
+
+					text-align: center;
+					width: 80%;
+				    margin-left: auto;
+				    margin-right: auto;
+
+					p{
+
+						font-family: $main-font;
+						color: $primary-color;
+						font-size: 1.5em;
+						margin-top: 25px;
+
+					}
+
+					@media only screen and (max-width: 972px) {
+
+						p {
+
+							font-size: 1.2em;
+
+						}
+
+					}
+
+					a{
+
+						font-family: $main-font;
+						color: $primary-color;
+						font-size: 1.5em;
+						margin-top: 25px;
+						display: inline-block;
+						text-align: right;
+    					width: 100%;
+    					text-decoration: none;
+
+					}
+
+					@media only screen and (max-width: 972px) {
+
+						a {
+
+							font-size: 1.2em;
+							margin-bottom: 10px;
+							margin-top: 10px;
+
+						}
+
+					}
+
+					a:hover {
+
+						color: $dark-color; 
+
+					}
+
+				}
+
+			}
+
+			@media only screen and (max-width: 555px) {
+
+				#aboutUs {
+
+					width: 100%;
+
+				}
+
+			}
+
+		}
+
+		@media only screen and (max-width: 555px) {
+
+			#row2 {
+
+				display: block;
+
+			}
+
+		}
+
+	}
+
+	@media only screen and (max-width: 1495px) {
+
+		#paper {
+
+			width: 80%;
+
+		}
+
+	}
+
+	@media only screen and (max-width: 1297px) {
+
+		#paper {
+
+			width: 90%;
+
+		}
+
+	}
+
+	
+
+}
+
+.helpSection {
+
+	transform: translateY(-155px);
+	
+	#helpTitleSection {
+
+		background-color: $light-color;
+		height: 800px;
+		text-align: center;
+
+		#helpTitle {
+
+			overflow: hidden;
+
+			#mobileTitle {
+
+				font-family: $main-font;
+				color: white;
+				font-size: 5.5em;
+				text-transform: uppercase;
+				font-weight: 700;
+				padding: 10px;
+				margin-top: 0px;
+				display: none;
+				@include text-shadow(10px 10px 5px 0px rgba(0,0,0,0.75));
+
+			}
+
+			@media only screen and (max-width: 555px) {
+
+				#mobileTitle {
+
+					display: block;
+
+				}
+
+			}
+
+			h2 {
+
+				font-family: $main-font;
+				color: white;
+				font-size: 5.5em;
+				text-transform: uppercase;
+				font-weight: 700;
+				padding: 10px;
+				margin-top: 350px;
+				@include text-shadow(10px 10px 5px 0px rgba(0,0,0,0.75));
+
+			}
+
+			@media only screen and (max-width: 555px) {
+
+				h2 {
+
+					display: none;
+
+				}
+
+			}
+
+		}
+
+		
+
+	}
+
+	#paper {
+
+		background-color: white;
+		width: 70%;
+		margin-left: auto;
+		margin-right: auto;
+		position: relative;
+		overflow: hidden;
+		z-index: 3;
+		//@include display-flex;
+		transform: translateY(-126px);
+		@include box-shadow(10px 10px 79px 0px rgba(0,0,0,0.75));
+
+
+
+		#row1 {
+
+			@include display-flex;
+
+			#picture {
+
+				background-image: url(../Images/Volunteer.jpg);
+				background-repeat: no-repeat;
+				background-position: center;
+				height: 405px;
+				width: 62%;
+				cursor: pointer;
+				text-align: center;
+				position: relative;
+
+				p {
+
+					color: white;
+					font-family: $main-font;
+					font-weight: 700;
+					font-size: 1.8em;
+					width: 70%;
+					margin-left: auto;
+					margin-right: auto;
+					margin-top: 100px;
+					line-height: 1.3;
+					z-index: 2;
+					position: relative;
+					@include transition(all .2s ease-in-out);
+					@include transform(translateX(-120%));
+
+				}
+
+				@media only screen and (max-width: 765px) {
+
+					p {
+
+						font-size: 1.5em;
+
+					}
+
+				}
+
+				@media only screen and (max-width: 555px) {
+
+					p {
+
+						margin-top: 80px;
+
+					}
+
+				}
+
+				#overlay {
+
+					content: "";
+					background-color: rgba(74, 180, 190, 0.74);
+					position: absolute;
+					top: 0;
+					bottom: 0;
+					left: 0;
+					right: 0;
+					z-index: 1;
+					@include transform(translateX(-100%));
+					@include transition(all .2s ease-in-out);
+
+				}
+
+			}
+
+			@media only screen and (max-width: 555px) {
+
+				#picture {
+
+					width: 100%;
+					position: absolute;
+
+				}
+
+			}
+
+			#picture:hover #overlay {
+
+				@include transform(translateX(0%));
+
+			}
+
+			#picture:hover p {
+
+				@include transform(translateX(0%));
+
+			}
+
+			#button {
+
+				width: 38%;
+				text-align: center;
+
+				a {
+
+					font-family: $main-font;
+					font-size: 2.5em;
+					color: white;
+					background-color: $dark-color;
+					padding: 30px 60px;
+					text-decoration: none;
+					display: inline-block;
+					margin-top: 165px;
+					position: relative;
+					border: 1px solid $dark-color;
+					transform: translateZ(0) translateY(0);
+					transition: all .2s ease-in-out;
+
+				}
+
+				@media only screen and (max-width: 1200px) {
+
+					a {
+
+						padding: 30px 30px;
+
+					}
+
+				}
+
+				@media only screen and (max-width: 975px) {
+
+					a {
+
+						padding: 30px 15px;
+
+					}
+
+				}
+
+				@media only screen and (max-width: 665px) {
+
+					a {
+
+						font-size: 2.2em;
+						padding: 30px 10px;
+
+					}
+
+				}
+
+				@media only screen and (max-width: 555px) {
+
+					a {
+
+						margin-top: 275px;
+						z-index: 2;
+						padding: 30px 100px;
+
+					}
+
+				}
+
+				@media only screen and (max-width: 400px) {
+
+					a {
+
+						width: 100%;
+						padding: 30px 0px;
+
+					}
+
+				}
+
+				a:after {
+
+					content: "";
+					background-color: white;
+					position: absolute;
+					top: 0;
+					bottom: 0;
+					left: 50%;
+					right: 50%;
+					opacity: 0;
+					z-index: -1;
+					@include transition(all .2s ease-in-out);
+				}
+
+				a:hover {
+
+					color: $dark-color;
+
+				}
+
+				a:hover:after {
+
+					left: 0;
+					right: 0;
+					opacity: 1;
+					
+				}
+
+				
+
+			}
+
+			@media only screen and (max-width: 555px) {
+
+				#button {
+
+					width: 100%;
+					position: absolute;
+
+				}
+
+			}
+
+		}
+
+		@media only screen and (max-width: 555px) {
+
+			#row1 {
+
+				display: block;
+				height: 405px;
+
+			}
+
+		}
+
+		#row2 {
+
+			@include display-flex;
+
+			#button {
+
+				width: 62%;
+				text-align: center;
+
+				a {
+
+					font-family: $main-font;
+					font-size: 2.5em;
+					color: white;
+					background-color: $dark-color;
+					padding: 30px 100px;
+					text-decoration: none;
+					display: inline-block;
+					margin-top: 165px;
+					border: 1px solid $dark-color;
+					position: relative;
+					transform: translateZ(0) translateY(0);
+					transition: all .2s ease-in-out;
+
+				}
+
+				@media only screen and (max-width: 555px) {
+
+					a {
+
+						z-index: 2;
+						margin-top: 275px;
+
+					}
+
+				}
+
+				@media only screen and (max-width: 400px) {
+
+					a {
+
+						width: 100%;
+						padding: 30px 0px;
+
+					}
+
+				}
+
+				a:after {
+
+					content: "";
+					background-color: white;
+					position: absolute;
+					top: 0;
+					bottom: 0;
+					left: 50%;
+					right: 50%;
+					opacity: 0;
+					z-index: -1;
+					@include transition(all .2s ease-in-out);
+
+				}
+
+				a:hover {
+
+					color: $dark-color;
+
+				}
+
+				a:hover:after {
+
+					left: 0;
+					right: 0;
+					opacity: 1;
+					
+				}
+
+			}
+
+			@media only screen and (max-width: 555px) {
+
+				#button {
+
+					width: 100%;
+					position: absolute;
+
+				}
+
+			}
+
+			#picture {
+
+				background-image: url(../Images/Donations.jpg);
+				background-repeat: no-repeat;
+				background-position: center;
+				height: 405px;
+				position: relative;
+				overflow: hidden;
+				cursor: pointer;
+				width: 38.3%;
+
+				p {
+
+					color: white;
+					font-family: $main-font;
+					font-weight: 700;
+					font-size: 1.8em;
+					width: 70%;
+					margin-left: auto;
+					margin-right: auto;
+					margin-top: 100px;
+					line-height: 1.3;
+					z-index: 2;
+					position: relative;
+					@include transition(all .2s ease-in-out);
+					@include transform(translateX(-125%));
+
+				}
+
+				@media only screen and (max-width: 1666px) {
+
+					p {
+
+						margin-top: 50px;
+
+					}
+
+				}
+
+				@media only screen and (max-width: 1500px) {
+
+					p {
+
+						font-size: 1.6em;
+						
+					}
+
+				}
+
+				@media only screen and (max-width: 1145px) {
+
+					p {
+
+						font-size: 1.4em;
+						
+					}
+
+				}
+
+				@media only screen and (max-width: 1145px) {
+
+					p {
+
+						font-size: 1.2em;
+						
+					}
+
+				}
+
+
+				@media only screen and (max-width: 555px) {
+
+					p {
+
+						z-index: 2;
+						font-size: 1.4em;
+
+					}
+
+				}
+
+				#overlay {
+
+					content: "";
+					background-color: rgba(74, 180, 190, 0.74);
+					position: absolute;
+					top: 0;
+					bottom: 0;
+					left: 0;
+					right: 0;
+					z-index: 1;
+					@include transform(translateX(-100%));
+					@include transition(all .2s ease-in-out);
+
+				}
+
+			}
+
+			@media only screen and (max-width: 555px) {
+
+				#picture {
+
+					width: 100%;
+					position: absolute;
+
+				}
+
+			}
+
+			
+
+			#picture:hover p {
+
+				@include transform(translateX(0%));
+
+			}
+
+			#picture:hover #overlay {
+
+				@include transform(translateX(0%));
+
+			}
+
+			
+
+		}
+
+		@media only screen and (max-width: 555px) {
+
+			#row2 {
+
+				display: block;
+				height: 405px;
+
+			}
+
+		}
+
+		#row3 {
+
+			@include display-flex;
+
+			#picture {
+
+				background-image: url(../Images/FirstAidKit.jpg);
+				background-repeat: no-repeat;
+				background-position: center;
+				height: 405px;
+				position: relative;
+				cursor: pointer;
+				width: 62%;
+
+				p {
+
+					color: white;
+					font-family: $main-font;
+					font-weight: 700;
+					font-size: 1.8em;
+					width: 70%;
+					margin-left: auto;
+					margin-right: auto;
+					margin-top: 100px;
+					line-height: 1.3;
+					z-index: 2;
+					position: relative;
+					@include transition(all .2s ease-in-out);
+					@include transform(translateX(-125%));
+
+				}
+
+				@media only screen and (max-width: 700px) {
+
+					p {
+
+						margin-top: 50px;
+
+					}
+
+				}
+
+				@media only screen and (max-width: 625px) {
+
+					p {
+
+						font-size: 1.6em;
+
+					}
+
+				}
+
+				@media only screen and (max-width: 555px) {
+
+					p {
+
+						font-size: 1.5em;
+
+					}
+
+				}
+
+				#overlay {
+
+					content: "";
+					background-color: rgba(74, 180, 190, 0.74);
+					position: absolute;
+					top: 0;
+					bottom: 0;
+					left: 0;
+					right: 0;
+					z-index: 1;
+					@include transform(translateX(-100%));
+					@include transition(all .2s ease-in-out);
+
+				}
+
+			}
+
+			@media only screen and (max-width: 555px) {
+
+				#picture {
+
+					width: 100%;
+					position: absolute;
+
+				}
+
+			}
+
+			
+
+			#picture:hover p {
+
+				@include transform(translateX(0%));
+
+			}
+
+			#picture:hover #overlay {
+
+				@include transform(translateX(0%));
+
+			}
+
+			#button {
+
+				width: 38%;
+				text-align: center;
+
+				a {
+
+					font-family: $main-font;
+					font-size: 2.5em;
+					color: white;
+					background-color: $dark-color;
+					padding: 30px 85px;
+					text-decoration: none;
+					display: inline-block;
+					margin-top: 165px;
+					border: 1px solid $dark-color;
+					position: relative;
+					transform: translateZ(0) translateY(0);
+					transition: all .2s ease-in-out;
+
+				}
+
+				@media only screen and (max-width: 1200px) {
+
+					a {
+
+						padding: 30px 40px;
+
+					}
+
+				}
+
+				@media only screen and (max-width: 670px) {
+
+					a {
+
+						font-size: 2.3em;
+						padding: 30px 20px;
+
+					}
+
+				}
+
+				@media only screen and (max-width: 555px) {
+
+					a {
+
+						z-index: 2;
+						margin-top: 275px;
+
+					}
+
+				}
+
+				@media only screen and (max-width: 400px) {
+
+					a {
+
+						width: 100%;
+						padding: 30px 0px;
+
+					}
+
+				}
+
+				a:after {
+
+					content: "";
+					background-color: white;
+					position: absolute;
+					top: 0;
+					bottom: 0;
+					left: 50%;
+					right: 50%;
+					opacity: 0;
+					z-index: -1;
+					@include transition(all .2s ease-in-out);
+
+				}
+
+				a:hover {
+
+					color: $dark-color;
+
+				}
+
+				a:hover:after {
+
+					left: 0;
+					right: 0;
+					opacity: 1;
+					
+				}
+
+			}
+
+
+			@media only screen and (max-width: 555px) {
+
+				#button {
+
+					width: 100%;
+					position: absolute;
+
+				}
+
+			}
+
+		}
+
+		@media only screen and (max-width: 555px) {
+
+			#row3 {
+
+				display: block;
+				height: 405px;
+
+			}
+
+		}
+
+		#row4 {
+
+			@include display-flex;
+
+			#button {
+
+				width: 62%;
+				text-align: center;
+
+				a {
+
+					font-family: $main-font;
+					font-size: 2.5em;
+					color: white;
+					background-color: $dark-color;
+					padding: 30px 115px;
+					text-decoration: none;
+					display: inline-block;
+					margin-top: 165px;
+					border: 1px solid $dark-color;
+					position: relative;
+					transform: translateZ(0) translateY(0);
+					transition: all .2s ease-in-out;
+
+				}
+
+				@media only screen and (max-width: 555px) {
+
+					a {
+
+						z-index: 2;
+						margin-top: 275px;
+
+					}
+
+				}
+
+				@media only screen and (max-width: 400px) {
+
+					a {
+
+						width: 100%;
+						padding: 30px 0px;
+
+					}
+
+				}
+
+				a:after {
+
+					content: "";
+					background-color: white;
+					position: absolute;
+					top: 0;
+					bottom: 0;
+					left: 50%;
+					right: 50%;
+					opacity: 0;
+					z-index: -1;
+					@include transition(all .2s ease-in-out);
+
+				}
+
+				a:hover {
+
+					color: $dark-color;
+
+				}
+
+				a:hover:after {
+
+					left: 0;
+					right: 0;
+					opacity: 1;
+					
+				}
+
+			}
+
+			@media only screen and (max-width: 555px) {
+
+				#button {
+
+					width: 100%;
+					position: absolute;
+
+				}
+
+			}
+
+			#picture {
+
+				background-image: url(../Images/RefugeeWorker.jpg);
+				background-repeat: no-repeat;
+				background-position: center;
+				height: 405px;
+				position: relative;
+				cursor: pointer;
+				overflow: hidden;
+				width: 38.3%;
+
+				p {
+
+					color: white;
+					font-family: $main-font;
+					font-weight: 700;
+					font-size: 1.8em;
+					width: 70%;
+					margin-left: auto;
+					margin-right: auto;
+					margin-top: 100px;
+					line-height: 1.3;
+					z-index: 2;
+					position: relative;
+					@include transition(all .2s ease-in-out);
+					@include transform(translateX(-125%));
+
+				}
+
+				@media only screen and (max-width: 1456px) {
+
+					p {
+
+						margin-top: 50px;
+
+					}
+
+				}
+
+				@media only screen and (max-width: 1200px) {
+
+					p {
+
+						font-size: 1.6em;
+
+					}
+
+				}
+
+				@media only screen and (max-width: 1016px) {
+
+					p {
+
+						margin-top: 30px;
+
+					}
+
+				}
+
+				@media only screen and (max-width: 975px) {
+
+					p {
+
+						margin-top: 50px;
+
+					}
+
+				}
+
+				@media only screen and (max-width: 800px) {
+
+					p {
+
+						margin-top: 30px;
+
+					}
+
+				}
+
+				@media only screen and (max-width: 775px) {
+
+					p {
+
+						margin-top: 50px;
+						font-size: 1.4em;
+
+					}
+
+				}
+
+				@media only screen and (max-width: 555px) {
+
+					p {
+
+						font-size: 1.4em;
+
+					}
+
+				}
+
+				#overlay {
+
+					content: "";
+					background-color: rgba(74, 180, 190, 0.74);
+					position: absolute;
+					top: 0;
+					bottom: 0;
+					left: 0;
+					right: 0;
+					z-index: 1;
+					@include transform(translateX(-100%));
+					@include transition(all .2s ease-in-out);
+
+				}
+
+			}
+
+			@media only screen and (max-width: 555px) {
+
+				#picture {
+
+					width: 100%;
+					position: absolute;
+
+				}
+
+			}
+
+			
+
+			#picture:hover p {
+
+				@include transform(translateX(0%));
+
+			}
+
+			#picture:hover #overlay {
+
+				@include transform(translateX(0%));
+
+			}
+
+		}
+
+		@media only screen and (max-width: 555px) {
+
+			#row4 {
+
+				display: block;
+				height: 405px;
+
+			}
+
+		}
+	}
+	@media only screen and (max-width: 975px) {
+
+			#paper {
+
+				width: 90%;
+
+			}
+
+	}
+
+}
+
+@media only screen and (max-width: 555px) {
+
+	.helpSection {
+
+		background-color: $light-color;
+
+	}
+
+}
+
+.eventsSection {
+
+	transform: translateY(-240px);
+	height: 1070px;
+	
+	#eventsTitleSection {
+
+		background-color: $light-color;
+		height: 800px;
+		text-align: center;
+
+		#eventsTitle {
+
+			overflow: hidden;
+
+			h2 {
+
+				font-family: $main-font;
+				color: white;
+				font-size: 5.5em;
+				font-weight: 700;
+				text-transform: uppercase;
+				margin-top: 350px;
+				padding: 10px;
+				@include text-shadow(10px 10px 5px 0px rgba(0,0,0,0.75));
+
+			}
+
+			@media only screen and (max-width: 555px) {
+
+				h2 {
+
+					margin-top: 0;
+
+				}
+
+			}
+
+		}
+
+	}
+
+	#paper {
+
+		background-color: white;
+		width: 70%;
+		margin-left: auto;
+		margin-right: auto;
+		position: relative;
+		overflow: hidden;
+		z-index: 3;
+		transform: translateY(-126px);
+		@include box-shadow(10px 10px 79px 0px rgba(0,0,0,0.75));
+
+		#row1 {
+
+			@include display-flex;
+
+			#text {
+
+				width: 50%;
+				text-align: center;
+
+				p {
+
+					font-family: $main-font;
+					color: $primary-color;
+					font-size: 1.8em;
+					margin-top: 100px;
+					margin-left: 20px;
+
+					span {
+
+						font-weight: 600;
+						font-size: 1.8em;
+
+					}
+				
+				}
+
+				@media only screen and (max-width: 973px) {
+
+					p {
+
+						margin-top: 50px;
+
+					}
+
+				}
+
+				@media only screen and (max-width: 900px) {
+
+					p {
+
+						font-size: 1.5em;
+
+					}
+
+				}
+
+				h3 {
+
+					font-family: $main-font;
+					color: $primary-color;
+					font-size: 2.4em;
+					font-weight: 600;
+
+				}
+
+			}
+
+			@media only screen and (max-width: 815px) {
+
+				#text {
+
+					width: 100%;
+
+				}
+
+			}
+
+			
+
+			#button {
+
+				width: 50%;
+				height: 340px;
+
+				a {
+
+					background-color: $red-color;
+					color: white;
+					border: 1px solid $red-color;
+					width: 50%;
+    				height: 20%;
+    				padding: 0;
+   				 	padding-top: 25px;
+   				 	margin-top: 120px;
+
+				}
+
+				@media only screen and (max-width: 400px) {
+
+					a {
+
+						width: 80%;
+
+					}
+
+				}
+
+				a:hover {
+
+					color: $red-color;
+
+				}
+
+			}
+
+			@media only screen and (max-width: 815px) {
+
+				#button {
+
+					width: 100%;
+
+				}
+
+			}
+
+		}
+
+		@media only screen and (max-width: 815px) {
+
+			#row1 {
+
+				display: block;
+
+			}
+
+		}
+
+		hr {
+
+					border-color: $primary-color;
+					width: 90%;
+					border-style: solid;
+
+				}
+
+		#row2 {
+
+			@include display-flex;
+
+			#button {
+
+				width: 50%;
+				height: 340px;
+
+				a {
+
+					background-color: $red-color;
+					color: white;
+					border: 1px solid $red-color;
+					width: 50%;
+    				height: 20%;
+    				padding: 0;
+   				 	padding-top: 25px;
+   				 	margin-top: 120px;
+
+				}
+
+				@media only screen and (max-width: 1132px) {
+
+					a {
+
+						font-size: 2.2em;
+
+					}
+
+				}
+
+				@media only screen and (max-width: 989px) {
+
+					a {
+
+						font-size: 1.8em;
+
+					}
+
+				}
+
+				@media only screen and (max-width: 815px) {
+
+					a {
+
+						font-size: 2.4em;
+
+					}
+
+				}
+
+				@media only screen and (max-width: 665px) {
+
+					a {
+
+						font-size: 2.2em;
+
+					}
+				
+				}
+
+				@media only screen and (max-width: 400px) {
+
+					a {
+
+						width: 80%;
+
+					}
+
+				}
+
+				a:hover {
+
+					color: $red-color;
+
+				}
+
+			}
+
+			@media only screen and (max-width: 815px) {
+
+				#button {
+
+					width: 100%;
+					position: absolute;
+					margin-top: 100px;
+
+				}
+
+			}
+
+
+
+			#text {
+
+				width: 50%;
+				text-align: center;
+
+				p {
+
+					font-family: $main-font;
+					color: $primary-color;
+					font-size: 1.8em;
+					margin-top: 100px;
+
+					span {
+
+						font-weight: 600;
+						font-size: 1.8em;
+
+					}
+
+				}
+
+				h3 {
+
+					font-family: $main-font;
+					color: $primary-color;
+					font-size: 1.8em;
+					font-weight: 600;
+
+				}
+
+			}
+
+			@media only screen and (max-width: 815px) {
+
+			#text {
+
+				width: 100%;
+				position: absolute;
+				margin-top: -50px;
+
+			}
+
+		}
+
+		}
+
+		@media only screen and (max-width: 815px) {
+
+			#row2 {
+
+				display: block;
+				height: 350px;
+				position: relative;
+
+			}
+
+		}
+
+		#row3 {
+
+			@include display-flex;
+
+			#text {
+
+				width: 50%;
+				text-align: center;
+
+				p {
+
+					font-family: $main-font;
+					color: $primary-color;
+					font-size: 1.8em;
+					margin-top: 100px;
+
+					span {
+
+						font-weight: 600;
+						font-size: 1.8em;
+
+					}
+
+				}
+
+				h3 {
+
+					font-family: $main-font;
+					color: $primary-color;
+					font-size: 1.8em;
+					font-weight: 600;
+
+				}
+
+			}
+
+			@media only screen and (max-width: 815px) {
+
+				#text {
+
+					width: 100%;
+					position: absolute;
+					margin-top: -50px;
+
+				}
+
+			}
+
+			#button {
+
+				width: 50%;
+				height: 340px;
+
+				a {
+
+					background-color: $red-color;
+					color: white;
+					border: 1px solid $red-color;
+					width: 50%;
+    				height: 20%;
+    				padding: 0;
+   				 	padding-top: 25px;
+   				 	margin-top: 120px;
+
+				}
+
+				@media only screen and (max-width: 665px) {
+
+					a {
+
+						font-size: 2.2em;
+
+					}
+
+				}
+
+				@media only screen and (max-width: 400px) {
+
+					a {
+
+						width: 80%;
+
+					}
+
+				}
+
+				a:hover {
+
+					color: $red-color;
+
+				}
+
+			}
+
+			@media only screen and (max-width: 815px) {
+
+			#button {
+
+				position: absolute;
+				width: 100%;
+				margin-top: 100px;
+
+			}
+
+		}
+
+		}
+
+		@media only screen and (max-width: 815px) {
+
+			#row3 {
+
+				display: block;
+				position: relative;
+				height: 350px;
+
+			}
+
+		}
+
+	}
+
+	@media only screen and (max-width: 815px) {
+
+			#paper {
+
+				width: 90%;
+
+			}
+
+		}
+
+}
+
+.contactSection {
+
+	transform: translateY(-270px);
+	height: 800px;
+	
+	#contactTitleSection {
+
+		background-color: $light-color;
+		height: 800px;
+		text-align: center;
+
+		#contactTitle {
+
+			overflow: hidden;
+
+			h2 {
+
+				font-family: $main-font;
+				color: white;
+				font-size: 5.5em;
+				font-weight: 700;
+				text-transform: uppercase;
+				margin-top: 350px;
+				padding: 10px;
+				@include text-shadow(10px 10px 5px 0px rgba(0,0,0,0.75));
+
+			}
+
+			@media only screen and (max-width: 555px) {
+
+				h2 {
+
+					margin-top: 250px;
+
+				}
+
+			}
+
+			@media only screen and (max-width: 435px) {
+
+				h2 {
+
+					font-size: 4.5em;
+
+				}
+
+			}
+
+		}
+
+	}
+
+	#paper {
+
+		background-color: white;
+		width: 70%;
+		margin-left: auto;
+		margin-right: auto;
+		position: relative;
+		overflow: hidden;
+		z-index: 3;
+		transform: translateY(-126px);
+		@include box-shadow(10px 10px 79px 0px rgba(0,0,0,0.75));
+
+		form {
+
+			#formHeader {
+
+			background-color: $primary-color;
+			text-align: center;
+			height: 212px;
+			@include box-shadow(10px 10px 5px 0px rgba(0,0,0,0.75));
+
+			#left {
+
+				@include display-flex;
+				float: left;
+
+				img {
+
+					margin: 20px;
+
+				}
+
+				@media only screen and (max-width: 825px) {
+
+					img {
+
+						width: 35%;
+						height: 35%;
+
+					}
+
+				}
+
+				p {
+
+					font-family: $main-font;
+					color: white;
+					font-size: 2em;
+					width: 20%;
+					margin-top: 55px;
+
+					span {
+
+						font-size: .6em;
+
+					}
+
+				}
+
+				@media only screen and (max-width: 825px) {
+
+					p {
+
+						font-size: 1.5em;
+						margin-top: 25px;
+
+					}
+
+				}
+
+				@media only screen and (max-width: 490px) {
+
+					p {
+
+						font-size: 1em;
+						
+
+					}
+
+				}
+
+			}
+
+			@media only screen and (max-width: 1167px) {
+
+				#left {
+
+					width: 50%;
+
+				}
+
+			}
+
+			#right {
+
+				text-align: center;
+				float: right;
+				width: 18%;
+
+				p {
+
+					color: white;
+					font-family: $main-font;
+					font-size: 1.6em;
+					margin-top: 55px;
+					margin-right: 20px;
+
+					span {
+
+						font-weight: 700;
+						font-size: 1.1em;
+
+					}
+
+				}
+
+				@media only screen and (max-width: 1267px) {
+
+					p {
+
+						font-size: 1.2em;
+
+					}
+
+				}
+
+				@media only screen and (max-width: 855px) {
+
+					p {
+
+						margin-top: 70px;
+
+					}
+
+				}
+
+				@media only screen and (max-width: 825px) {
+
+					p {
+
+						margin-top: 33px;
+
+					}
+
+				}
+
+				@media only screen and (max-width: 520px) {
+
+					p {
+
+						font-size: 1em;
+
+					}
+
+				}
+
+				@media only screen and (max-width: 371px) {
+
+					p {
+
+						font-size: .9em;
+
+					}
+
+				}
+
+			}
+
+			@media only screen and (max-width: 1616px) {
+
+				#right {
+
+					width: 30%;
+
+				}
+
+			}
+
+			@media only screen and (max-width: 1267px) {
+
+				#right {
+
+					width: 24%;
+
+				}
+
+			}
+
+			@media only screen and (max-width: 946px) {
+
+				#right {
+
+					width: 40%;
+
+				}
+
+			}
+
+			
+
+		}
+
+		@media only screen and (max-width: 825px) {
+
+			#formHeader {
+
+				height: 145px;
+
+			}
+
+		}
+
+		.nameInput {
+
+			text-align: center;
+
+			input {
+
+				width: 65%;
+				height: 100px;
+				text-align: center;
+				background-color: $dark-color;
+				border: none;
+				margin-top: 50px;
+				font-family: $main-font;
+				font-size: 2em;
+				color: white;
+				@include transition(all .2s ease-in-out);
+				@include input-placeholder {
+
+					color: white;
+
+				}
+
+			}
+
+			@media only screen and (max-width: 666px) {
+
+				input {
+
+					margin-top: 20px;
+
+				}
+
+			}
+
+			@media only screen and (max-width: 533px) {
+
+				input {
+
+					font-size: 1.6em;
+
+				}
+
+			}
+
+			@media only screen and (max-width: 445px) {
+
+				input {
+
+					font-size: 1.4em;
+
+				}
+
+			}
+
+			@media only screen and (max-width: 400px) {
+
+				input {
+
+					width: 90%;
+
+				}
+
+			}
+
+			input:focus {
+
+				background-color: $light-color;
+				outline: none;
+				@include input-placeholder {
+
+					@include opacity(0);
+
+				}
+
+			}
+
+		}
+
+		.emailInput {
+
+			text-align: center;
+
+			input {
+
+				width: 65%;
+				height: 100px;
+				text-align: center;
+				background-color: $dark-color;
+				border: none;
+				margin-top: 50px;
+				font-family: $main-font;
+				font-size: 2em;
+				color: white;
+				@include transition(all .2s ease-in-out);
+				@include input-placeholder {
+
+					color: white;
+
+				}
+
+			}
+
+			@media only screen and (max-width: 666px) {
+
+				input {
+
+					margin-top: 20px;
+
+				}
+
+			}
+
+			@media only screen and (max-width: 533px) {
+
+				input {
+
+					font-size: 1.6em;
+
+				}
+
+			}
+
+			@media only screen and (max-width: 445px) {
+
+				input {
+
+					font-size: 1.4em;
+
+				}
+
+			}
+
+			@media only screen and (max-width: 400px) {
+
+				input {
+
+					width: 90%;
+
+				}
+
+			}
+
+			input:focus {
+
+				background-color: $light-color;
+				outline: none;
+				@include input-placeholder {
+
+					@include opacity(0);
+
+				}
+
+			}
+
+		}
+
+		.messageInput {
+
+			text-align: center;
+
+			textarea {
+
+				width: 65%;
+				height: 200px;
+				text-align: center;
+				background-color: $dark-color;
+				border: none;
+				margin-top: 50px;
+				padding-top: 20px;
+				font-family: $main-font;
+				font-size: 2em;
+				color: white;
+				@include transition(all .2s ease-in-out);
+				@include input-placeholder {
+
+					color: white;
+
+				}
+
+			}
+
+			@media only screen and (max-width: 666px) {
+
+				textarea {
+
+					margin-top: 20px;
+
+				}
+
+			}
+
+			@media only screen and (max-width: 533px) {
+
+				textarea {
+
+					font-size: 1.6em;
+
+				}
+
+			}
+
+			@media only screen and (max-width: 445px) {
+
+				textarea {
+
+					font-size: 1.4em;
+
+				}
+
+			}
+
+			@media only screen and (max-width: 400px) {
+
+				textarea {
+
+					width: 90%;
+
+				}
+
+			}
+
+			textarea:focus {
+
+				background-color: $light-color;
+				outline: none;
+				@include input-placeholder {
+
+					@include opacity(0);
+
+				}
+
+			}
+
+		}
+
+		.submitButton {
+
+			background-color: $red-color;
+			color: white;
+			font-family: $main-font;
+			font-size: 2em;
+			cursor: pointer;
+			border: 1px solid $red-color;
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: 50px;
+			margin-bottom: 50px;
+			display: block;
+			width: 30%;
+			height: 100px;
+			text-align: center;
+			@include transition(all .2s ease-in-out);
+
+		}
+
+		/* @media only screen and (max-width: 445px) {
+
+			.submitButton {
+
+				font-size: 1.4em;
+
+			}
+
+		} */
+
+		@media only screen and (max-width: 815px) {
+
+			.submitButton {
+
+				width: 65%;
+
+			}
+
+		}
+
+		@media only screen and (max-width: 400px) {
+
+			.submitButton {
+
+				width: 90%;
+
+			}
+
+		}
+
+		.submitButton:hover {
+			
+			background-color: white;
+			color: $red-color;
+			@include box-shadow(10px 10px 5px 0px rgba(0,0,0,0.75));
+
+		}
+
+		}
+
+		
+
+
+
+	}
+	@media only screen and (max-width: 666px) {
+
+		#paper {
+
+			width: 90%;
+
+		}
+
+	}
+
+}
+
+.footer {
+	
+	background-color: $dark-color;
+	height: 400px;
+	overflow: hidden;
+	transform: translateY(-200px);
+
+	#left {
+
+		@include display-flex;
+		margin-top: 200px;
+		position: absolute;
+		bottom: 0;
+
+		img {
+
+			//margin: 100px 20px 0px 20px;
+
+		}
+
+		@media only screen and (max-width: 595px) {
+
+			img {
+
+				width: 30%;
+				height: 30%;
+
+			}
+
+		}
+
+		h3 {
+
+			font-family: $main-font;
+			color: white;
+			font-size: 2em;
+			width: 20%;
+			margin-top: 35px;
+			margin-left: 10px;
+
+			span {
+
+				font-size: .6em;
+
+			}
+
+			#tiny {
+
+				font-size: .3em;
+
+			}
+		}
+
+		@media only screen and (max-width: 556px) {
+
+			h3 {
+
+				width: 80%;
+				margin-right: 50px;
+
+			}
+
+		}
+
+
+
+	}
+
+	@media only screen and (max-width:988px) {
+
+			#left {
+
+				right: 0;
+				
+			}
+
+		}
+
+
+	#right {
+
+		position: absolute;
+		bottom: 100px;
+		right: 40px;
+
+		nav {
+
+			a {
+
+				font-family: $main-font;
+				color: white;
+				font-size: 1.5em;
+				text-decoration: none;
+				margin: 0px 20px;
+				white-space: nowrap;
+				@include transition(all .2s ease-in-out);
+
+			}
+
+			@media only screen and (max-width: 673px) {
+
+				a {
+
+					margin: 0px 10px;
+
+				}
+
+			}
+
+			a:hover {
+
+				color: $light-color;
+
+			}
+
+		}
+
+
+
+	}
+
+	@media only screen and (max-width:988px) {
+
+			#right {
+
+				bottom: 200px;
+				
+			}
+
+		}
+
+}
+
+@media only screen and (max-width: 573px) {
+
+	.footer {
+
+		text-align: center;
+
+	}
+
+}
+
+.moved {
+	
+	@include transform(translateX(0%) !important);
+
+}
